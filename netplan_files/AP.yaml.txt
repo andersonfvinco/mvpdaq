@@ -1,0 +1,15 @@
+#-------------------------------------------------------
+#wifi AP
+#-------------------------------------------------------
+network:
+  version: 2
+  renderer: NetworkManager
+  wifis:
+    wlan0:
+      dhcp4: no
+      addresses: [10.10.10.1/24]
+      access-points:
+        "pi_AP":
+         mode: ap
+         channel: 11
+          
