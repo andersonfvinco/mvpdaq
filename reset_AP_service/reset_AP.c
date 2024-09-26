@@ -54,9 +54,9 @@ int main(void)
             if(count==5 && isAPDisabled()){
                 printf("restarting to pi AP mode ...\n");
                 printf("changing file names ...\n");
-                system("sudo mv /etc/netplan/AP.yaml.txt /etc/netplan/AP.yaml");
-                system("sudo mv /etc/netplan/wifi_client.yaml /etc/netplan/wifi_client.yaml.txt");
-                system("sudo netplan apply");
+                system("mv /etc/netplan/AP.yaml.txt /etc/netplan/AP.yaml");
+                system("mv /etc/netplan/wifi_client.yaml /etc/netplan/wifi_client.yaml.txt");
+                system("netplan apply");
             }
         }
         delay(1000);
